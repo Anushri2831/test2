@@ -3,13 +3,16 @@ import "./HotelCard.css";
 import { AiOutlineArrowLeft} from 'react-icons/ai';
 import {FaBookmark} from 'react-icons/fa';
 import {FaShare} from 'react-icons/fa';
+import {MdLocationOn} from 'react-icons/md';
+import {FaStar} from 'react-icons/fa';
+import {Fabed} from 'react-icons/fa';
 
 const HotelCard = () => {
   return (
     <div className="hotel-card">
       <div className="hotel-image">
         <img
-          src="https://th.bing.com/th/id/OIP.n6iViUQC6AVJBOe3gopm-QHaE8?w=262&h=180&c=7&r=0&o=5&pid=1.7"></img>
+          src="https://photos.mandarinoriental.com/is/image/MandarinOriental/dubai-suite-skyline-view-bedroom"></img>
         
         <div className="hotel-icons">
             <div>
@@ -24,18 +27,22 @@ const HotelCard = () => {
 
       <div className="hotel-info">
         <h2>Hotel Dark Moon</h2>
-        <p className="location">📍 Paris, France</p>
+        <p className="location"> <MdLocationOn style={{color:"black", gap:"10px"}} />Paris, France</p>
+        <div className="R-p">
+        
+        <p className="rating"><FaStar /> 4.9<span style={{color:"#ccc"}}> (6.5K reviews) </span></p>
         <p className="price">
-          <span className="amount">$390</span>/night
+          <span className="amount" style={{justifyContent:"flex-end"}}>$390 / <span style={{color:"black"}}>night</span></span>
         </p>
-        <p className="rating">⭐ 4.9 (6.5K reviews)</p>
-        <p className="description">
+        </div>
+        
+        <p className="description" style={{color:"black"}}>
           Hotel Dark Moon, 100 metres from Front Beach, Bali Motel Yung Tau
-          offers accommodation with a garden, private parking and a shared...
+          offers accommodation with a garden, private parking and a shared..<span style={{color:"orange"}}>Read more</span>
         </p>
 
         <div className="features">
-          <div className="feature-item">🛏 2 Bed</div>
+          <div className="feature-item"><Fabed style={{color:"black"}}/>2 Bed</div>
           <div className="feature-item">🍽 Dinner</div>
           <div className="feature-item">🛁 Hot Tub</div>
           <div className="feature-item">📶 WiFi</div>

@@ -17,6 +17,7 @@
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-radius: 20px;
   }
   
  .hotel-icons {
@@ -46,21 +47,29 @@
   
   .location {
     color: gray;
+    font-weight: bolder;
   }
   
   .price {
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     color: #ff5733;
+    display:flex;
+    justify-content: flex-end;
+    display: inline-block;
+    vertical-align: middle;
+  
   }
   
   .amount {
-    font-size: 22px;
+    font-size: 15px;
   }
   
   .rating {
     font-size: 14px;
     color: #333;
+    display: inline-block;
+    vertical-align: middle;
   }
   
   .description {
@@ -101,6 +110,13 @@
     display:flex;
     justify-items: flex-end;
     gap:10px;
+  }
+
+  .R-p{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
   }
 
  
