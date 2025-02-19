@@ -19,7 +19,7 @@
     border-top-right-radius: 20px;
   }
   
-  .hotel-icons {
+ .hotel-icons {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
   }
-  
+   
   .icon-button {
     background: rgba(255, 255, 255, 0.8);
     border: none;
@@ -96,3 +96,11 @@
   .book-now:hover {
     background: #e04a2b;
   }
+
+  .hoteli{
+    display:flex;
+    justify-items: flex-end;
+    gap:10px;
+  }
+
+ 
